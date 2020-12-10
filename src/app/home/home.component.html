@@ -1,0 +1,41 @@
+<div class="home-section">
+    <div class="row-1">
+        <div class="grid-1">
+            <img class="home-image-1" [src]="myList[current].img" alt="living room" />
+        </div>
+        <div class="grid-2">
+            <div class="arrow-warper">
+                <button class="home-icon-left" (click)='fetchPrev()'>
+                    <img src="../../assets/images/icon-angle-left.svg" alt="left">
+                </button>
+                <button class="home-icon-right" (click)='fetchNext()'>
+                    <img src="../../assets/images/icon-angle-right.svg" alt="right">
+                </button>
+            </div>
+            <div class="center-box">
+                <h2> {{ myList[current].title }} </h2>
+                <p> {{ myList[current].body}} </p>
+
+                <a href="#"> Shop now &#8594; </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row-2">
+        <div class="grid-3">
+            <img class="home-image-2" src="../../assets/images/image-about-dark.jpg" alt="sofa">
+        </div>
+        <div class="grid-4">
+            <h3> About our furniture </h3>
+            <p>
+                Our multifunctional collection blends design and function to suit your individual taste.
+                Make each room unique, or pick a cohesive theme that best express your interests and what
+                inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+                or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+        <div class="grid-5">
+            <img class="home-image-3" src="../../assets/images/image-about-light.jpg" alt="image about light">
+        </div>
+    </div>
+
+</div>
